@@ -27,3 +27,7 @@ If there are any earlier available appointment, bell sound will be play
 ```
 python3 automate.py
 ```
+
+## note
+
+This program notify user regarding a new appointment, user still need to manually modify their appointment
