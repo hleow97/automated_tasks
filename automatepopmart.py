@@ -30,10 +30,10 @@ def accept_terms(driver):
 def play_sound():
     mixer.init()
     mixer.music.load("bell.wav")
-    mixer.music.play(10)
+    mixer.music.play(60)
     print("🎉 🎉 🎉")
     while mixer.music.get_busy():
-        time.sleep(20)
+        time.sleep(120)
 
 def check_availability(driver):
     try:
