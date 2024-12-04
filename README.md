@@ -1,23 +1,12 @@
-# automate refresh visa health checkup
+# automate popmart when item is restocked
 
 ## How it works
 
-If there are any earlier available appointment, bell sound will be play
+If there are any stock available, bell sound will be play
 
 ## Prerequisite
-
-- ensure you have an existing booking
-
-- ensure `automate.py` have the correct information
-
-  - HAPI id
-  - first name
-  - last name
-  - DOB
-
-- If you are not in Melbourne, please modify
-
-  - centers distance/names
+- have [python3](https://www.python.org/downloads/) installed
+- have [google chrome](https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop) installed
 
 - install dependencies
   `pip3 install -r requirements.txt`
@@ -25,9 +14,11 @@ If there are any earlier available appointment, bell sound will be play
 ## how to run
 
 ```
-python3 automate.py
+python3 ./automatepopmart.py
 ```
 
 ## note
 
-This program notify user regarding a new appointment, user still need to manually modify their appointment
+This program notify user regarding stock of popmart's item, user still need to purchase the item manually
+
+
