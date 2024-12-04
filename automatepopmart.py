@@ -25,7 +25,7 @@ def accept_terms(driver):
         accept_tnc.click()
         print("T&C accepted")
     else:
-        exit()
+        print('no T&C')
 
 def play_sound():
     mixer.init()
