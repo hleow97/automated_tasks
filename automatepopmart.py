@@ -10,9 +10,7 @@ from pygame import mixer
 urls = [
     "https://www.popmart.com/my/products/659/CRYBABY-Sad-Club-Series-Silicone-Plush-Earphone-Bag",
     "https://www.popmart.com/my/products/661/CRYBABY-Sad-Club-Series-Plush-Figure",
-    "https://www.popmart.com/my/products/1385/CRYBABY-Crying-Again-Series-Earphone-Case",
-    "https://www.popmart.com/my/products/1524/CRYBABY-Crying-Again-Series-Vinyl-Face-Plush-Blind-Box",
-    "https://www.popmart.com/my/products/887/CRYBABY-%C3%97-Powerpuff-Girls-Series-Vinyl-Face-Plush-Blind-Box"
+    "https://www.popmart.com/my/products/1385/CRYBABY-Crying-Again-Series-Earphone-Case", # love make us cry
 ]
 
 def initialize_driver():
@@ -59,7 +57,7 @@ def main():
 
     found = False
     while not found:
-        time.sleep(300)
+        time.sleep(random.randrange(20,40))
         selected_url = random.choice(urls)
         driver.get(selected_url)
         WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'Details')]")))
